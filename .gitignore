@@ -1,0 +1,32 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Excel / raw data files 
+*.xlsx
+*.xls
+
+# Output folders and files
+*.png
+*.pdf
+*.docx
+new_*/       # timestamped folders
+output_*/    # any other generated folders
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
