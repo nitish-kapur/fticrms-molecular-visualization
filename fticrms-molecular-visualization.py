@@ -1,7 +1,31 @@
 """
 FTICR-MS Data Visualisation
 Copyright (C) 2026 Nitish Kapur
+GitHub: [github.com/nitish-kapur](https://github.com/nitish-kapur) 
 Licensed under GNU GPLv3
+"""
+
+"""
+    This script was made as a part of a biofuel research project.
+
+    1.  Opens a file dialog to select an Excel file containing FTICR-MS data.
+    2.  Reads all sheets from the Excel file; each sheet represents one sample.
+    3.  Opens a second dialog to select an output folder.
+    4.  Creates a timestamped output folder (e.g. "FTICRMS 20260328_1430") inside it.
+    5.  Computes derived quantities: Kendrick Mass, Nominal Kendrick Mass, and
+        Kendrick Mass Defect (KMD) using CH₂ as the base unit.
+    6.  For each sheet and each N-BO column, generates 15 scatter/bar plots:
+            - Aromaticity Index (AI) vs #C, H/C, DBE
+            - DBE vs #C, KMD, #O
+            - H/C vs DBE, O/C (coloured by Calc m/z and by molecular class)
+            - H/C vs #C, N/C
+            - KMD vs Nominal Mass
+            - Normalised Intensity vs Calc m/z, DBE, #C
+    7.  Saves each plot as a high-resolution PNG (300 dpi) in a subfolder
+        organised by sheet name and N-BO column.
+    8.  Compiles all plots into a single combined PDF report.
+    9.  Embeds all plots into a Word (.docx) report and saves it to the
+        same output folder.
 """
 
 import os
