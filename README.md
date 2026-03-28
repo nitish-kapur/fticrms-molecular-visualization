@@ -1,10 +1,11 @@
 # FTICR-MS Molecular Visualization
+
+A Python tool to generate molecular plots from FTICR-MS data stored in Excel files. It produces 15 types of visualizations per intensity column, including Aromaticity Index, H/C, O/C, DBE, Kendrick Mass Defect, and normalized intensity graphs. Output is saved as PNG, PDF, and DOCX.
+
 ## Author
 
 **Nitish Kapur**  
 GitHub: [github.com/nitish-kapur](https://github.com/nitish-kapur)
-
-A Python tool to generate molecular plots from FTICR-MS data stored in Excel files. It produces 15 types of visualizations per intensity column, including Aromaticity Index, H/C, O/C, DBE, Kendrick Mass Defect, and normalized intensity graphs. Output is saved as PNG, PDF, and DOCX.
 
 ## Project Overview
 
